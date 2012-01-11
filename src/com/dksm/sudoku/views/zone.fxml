@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" id="loginId" fx:controller="com.dksm.app.ctrls.LoginCtrl" >
+    <children>
+        <Label text="User name: " layoutX="88.0" layoutY="58.0" prefWidth="126.0"/>
+        <TextField layoutX="188.0" layoutY="58.0" prefWidth="126.0" fx:id="name" />
+        <Label text="Password: " layoutX="88.0" layoutY="78.0" prefWidth="126.0"/>
+        <PasswordField layoutX="188.0" layoutY="78.0" prefWidth="126.0" fx:id="pwd" />
+        <Button id="loginB" text="login" onAction="#login" layoutX="168.0" layoutY="258.0" prefWidth="60.0"/>
+        <Button id="registerB" text="register" onAction="#toReg" layoutX="268.0" layoutY="258.0" prefWidth="90.0"/>
+        <Label layoutX="80.0" layoutY="100.0" textFill="RED" fx:id="errorMessage" />
+    </children>
+</GridPane>
